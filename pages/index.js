@@ -6,6 +6,7 @@ import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { FileUpload } from "primereact/fileupload";
+import blImage from "../images/bl-image.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,15 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>BL File Uploader</h1>
-
+        <img
+          src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3Mzk4NTUzMw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+          style={{
+            width: "25%",
+            borderRadius: "25px",
+            border: "2px solid #2196f3",
+            padding: "10px",
+          }}
+        />
         <div>
           <FileUpload name="demo" url="./api/upload"></FileUpload>
         </div>
